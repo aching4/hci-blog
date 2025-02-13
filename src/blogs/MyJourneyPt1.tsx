@@ -1,3 +1,8 @@
+import drawing from "../assets/images/drawing.png";
+import notion from "../assets/images/notion.png";
+import google from "../assets/images/google.png";
+import math from "../assets/images/math.png";
+
 export default function MyJourneyPt1() {
   return (
     <>
@@ -7,6 +12,7 @@ export default function MyJourneyPt1() {
       <div class="font-bold text-xl mt-4">About Me</div>
       <div class="space-y-2">
         <div class="indent-12">
+          <img src={drawing} class="float-right ml-5 mt-2 w-64" />
           Hi! My name is Ashley. I like to sketch and do digital art, which
           definitely drew me to this area that heavily examines humans reactions
           and feelings on designs in an applications. I started in computer
@@ -63,6 +69,7 @@ export default function MyJourneyPt1() {
           </div>
         </div>
         <div class="indent-12">
+          <img src={notion} class="float-left mr-5 mt-2 w-64" />
           An example of one that has made a positive impact in my life is
           Notion, a task management application. The clean and clear visual
           navigation and design helps me stay organized and keep track of my
@@ -82,6 +89,7 @@ export default function MyJourneyPt1() {
           factor on why it's so popular nowadays.
         </div>
         <div class="indent-12">
+          <img src={google} class="float-right ml-5 mt-2 w-64" />
           Google suites has also made a positive difference in my life. Its
           collaboration feature made working on projects for classes much
           easier. Its clear share button plus multiple areas to access
@@ -121,6 +129,7 @@ export default function MyJourneyPt1() {
           </div>
         </div>
         <div class="indent-12">
+          <img src={math} class="float-right ml-5 mt-2 w-64" />
           While there are already many app/websites for younger kids to solve
           this issue, older students in more advanced classes lack materials and
           platforms that are interactive and stimulating. Tutoring, textbooks,
