@@ -6,7 +6,10 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build && find dist -type f \\( -name 'index.html' -o -name 'index-*.js' \\) -exec sed -i 's#/assets#assets#g' {} +",
+    "build": "vite build",
+    "ready": "find dist -type f \\( -name 'index.html' -o -name 'index-*.js' \\) -exec sed -i 's#/assets#assets#g' {} +",
+    "publish": "cd dist && git add . && git commit -m 'GitHub Pages' && git push",
+    "pages": "npm run build && npm run ready && npm run publish",
     "serve": "vite preview"
   },
   "license": "MIT",
