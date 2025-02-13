@@ -1,6 +1,6 @@
 import { createSignal, For, JSX, Show } from "solid-js";
 import MyJourneyPt1 from "../blogs/MyJourneyPt1";
-import Blog from "../components/BlogContainer";
+import BlogContainer from "../components/BlogContainer";
 import BlogPreview from "../components/BlogPreview";
 
 export default function BlogPage() {
@@ -28,7 +28,7 @@ export default function BlogPage() {
         )}
       </For>
       <Show when={show()}>
-        <Blog element={blog()} setShow={setShow} />
+        <BlogContainer element={blog()} setShow={setShow} />
       </Show>
     </div>
   );

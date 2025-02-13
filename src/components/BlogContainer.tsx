@@ -1,7 +1,7 @@
 import { IconX } from "@tabler/icons-solidjs";
 import { JSX, Setter } from "solid-js";
 
-export default function Blog(props: {
+export default function BlogContainer(props: {
   element?: JSX.Element;
   setShow?: Setter<boolean>;
 }) {
