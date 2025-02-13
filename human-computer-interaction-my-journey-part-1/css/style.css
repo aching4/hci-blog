@@ -114,111 +114,14 @@ p {
 	}
 }
 
-/* Author Bio */
-
-.back {
-	top: 0;
-	margin: 0;
-	left: 10px;
-	cursor: pointer;
-	position: fixed;
-	user-select: none;
-}
-
-.bio {
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
-#title {
-	opacity: 0;
-	text-align: center;
-	animation-name: title;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes title {
-	100% {
-		opacity: 1;
-	}
-}
-
-#info {
-	opacity: 0;
+.image-wrap-left {
 	float: left;
-	width: 360px;
-	font-size: 23px;
-	margin-top: 75px;
-	animation-delay: 1s;
-	animation-name: info;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	margin-right: 20px;
+	margin-top: 8px;
 }
 
-@keyframes info {
-	100% {
-		opacity: 1;
-		margin-top: 25px;
-	}
-}
-
-#jimmy {
-	opacity: 0;
+.image-wrap-right {
 	float: right;
-	width: 300px;
-	height: auto;
-	margin-right: -50px;
-	animation-delay: 2s;
-	animation-name: jimmy;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes jimmy {
-	100% {
-		opacity: 1;
-		margin-right: 0px;
-	}
-}
-
-/* Works Cited */
-
-.cite {
-	opacity: 0;
-	margin-left: 48px;
-	text-indent: -48px;
-	animation-name: cite;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-#one {
-	animation-delay: 1s;
-}
-
-#two {
-	animation-delay: 1.5s;
-}
-
-#three {
-	animation-delay: 2s;
-}
-
-#four {
-	animation-delay: 2.5s;
-}
-
-@keyframes cite {
-	100% {
-		opacity: 1;
-	}
-}
-
-.stamp {
-	bottom: 0;
-	margin: 0;
-	right: 5px;
-	cursor: default;
-	position: fixed;
-	user-select: none;
+	margin-left: 20px;
+	margin-top: 8px;
 }
