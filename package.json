@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && find dist -type f \\( -name 'index.html' -o -name 'index-*.js' \\) -exec sed -i 's#/assets#assets#g' {} +",
     "serve": "vite preview"
   },
   "license": "MIT",
