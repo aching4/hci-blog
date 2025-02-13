@@ -1,18 +1,23 @@
+import { useSearchParams } from "@solidjs/router";
 import { createSignal, For, JSX, Show } from "solid-js";
 import MyJourneyPt1 from "../blogs/MyJourneyPt1";
 import BlogContainer from "../components/BlogContainer";
 import BlogPreview from "../components/BlogPreview";
 
 export default function BlogPage() {
-  const [show, setShow] = createSignal<boolean>(false);
-  const [blog, setBlog] = createSignal<JSX.Element>();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const blogs = [
     {
       title: "My Journey Pt. 1",
+      path: "my-journey-pt-1",
       element: <MyJourneyPt1 />,
     },
   ];
+
+  const [blog, setBlog] = createSignal<JSX.Element>(
+    blogs.find((blog) => blog.path === searchParams.path)?.element
+  );
 
   return (
     <div class="p-8">
@@ -23,15 +28,21 @@ export default function BlogPage() {
             <BlogPreview
               title={blog.title}
               onClick={() => {
+                setSearchParams({ path: blog.path });
                 setBlog(blog.element);
-                setShow(true);
               }}
             />
           )}
         </For>
       </div>
-      <Show when={show()}>
-        <BlogContainer element={blog()} setShow={setShow} />
+      <Show when={blog()}>
+        <BlogContainer
+          element={blog()}
+          onClose={() => {
+            setSearchParams({ path: null });
+            setBlog();
+          }}
+        />
       </Show>
     </div>
   );
