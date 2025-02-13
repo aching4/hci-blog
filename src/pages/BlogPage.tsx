@@ -9,24 +9,27 @@ export default function BlogPage() {
 
   const blogs = [
     {
-      title: "My Journey - Part 1",
+      title: "My Journey Pt. 1",
       element: <MyJourneyPt1 />,
     },
   ];
 
   return (
-    <div class="flex flex-wrap gap-4 justify-center items-center p-8">
-      <For each={blogs}>
-        {(blog) => (
-          <BlogPreview
-            title={blog.title}
-            onClick={() => {
-              setBlog(blog.element);
-              setShow(true);
-            }}
-          />
-        )}
-      </For>
+    <div class="p-8">
+      <div class="text-5xl text-center mb-16">Human Computer Interaction</div>
+      <div class="flex flex-wrap gap-4 justify-center items-center">
+        <For each={blogs}>
+          {(blog) => (
+            <BlogPreview
+              title={blog.title}
+              onClick={() => {
+                setBlog(blog.element);
+                setShow(true);
+              }}
+            />
+          )}
+        </For>
+      </div>
       <Show when={show()}>
         <BlogContainer element={blog()} setShow={setShow} />
       </Show>
