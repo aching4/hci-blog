@@ -7,6 +7,7 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
+    "init": "bash -c \"npm install && git clone -b dist $(git config --get remote.origin.url) dist\"",
     "ready": "find dist -type f \\( -name 'index.html' -o -name 'index-*.js' \\) -exec sed -i 's#/assets#/hci-blog/assets#g' {} +",
     "helpers": "cp gh-pages_helper/404.html dist && cp gh-pages_helper/redirect-parser.js dist/assets",
     "redirect": "bash -c \"find dist -type f -name 'index.html' -exec sed -i 's#</head>#  <script type=\"text/javascript\" src=\"/hci-blog/assets/redirect-parser.js\"></script>\\n  </head>#' {} +\"",
