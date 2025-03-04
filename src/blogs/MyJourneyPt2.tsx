@@ -1,16 +1,20 @@
 import pie from "../assets/images/MyJourneyPt2/pie.png";
 import qa1 from "../assets/images/MyJourneyPt2/qa1.png";
 import qa2 from "../assets/images/MyJourneyPt2/qa2.png";
+import Paragraph from "../components/elements/Paragraph";
+import Title from "../components/elements/Title";
 
 export default function MyJourneyPt2() {
   return (
     <>
-      <div class="font-bold text-3xl border-b-2 border-black pb-2">
-        My Journey Pt. 2
-      </div>
+      <Title>My Journey Pt. 2</Title>
       <div class="space-y-2 mt-4">
-        <div class="indent-12">
-          <img src={pie} class="float-right ml-5 mt-2 w-64" />
+        <Paragraph
+          img={{
+            src: pie,
+            direction: "right",
+          }}
+        >
           As most are well aware, math is a challenging subject for many. The
           different equations, rules, and symbols can be difficult to memorize
           and understand quickly. Repeatedly reading notes and going over
@@ -21,9 +25,13 @@ export default function MyJourneyPt2() {
           integrating games with the learning material, we aim to create an
           interactive environment that enhances recall through active
           participation.
-        </div>
-        <div class="indent-12">
-          <img src={qa1} class="float-left ml-5 mt-2 w-64" />
+        </Paragraph>
+        <Paragraph
+          img={{
+            src: qa1,
+            direction: "left",
+          }}
+        >
           Our initial assumption was based more on what we thought older
           students would enjoy—having a more structured game with defined goals
           that progressively became more difficult to build up the skills
@@ -39,9 +47,13 @@ export default function MyJourneyPt2() {
           This led us to think not only about the game or level itself but also
           about what people would enjoy and how to prevent interactions from
           becoming negative.
-        </div>
-        <div class="indent-12">
-          <img src={qa2} class="float-left ml-5 mt-2 w-64" />
+        </Paragraph>
+        <Paragraph
+          img={{
+            src: qa2,
+            direction: "left",
+          }}
+        >
           Overall, our approach to connecting with potential users was to
           present some conflicting ideas and understand their thought processes
           on those topics. One big challenge was people's availability, so most
@@ -55,8 +67,8 @@ export default function MyJourneyPt2() {
           want to add an optional tutorial at the beginning and include small
           hints to keep people motivated without giving away the answers. We
           also want to provide more detailed feedback and explanations.
-        </div>
-        <div class="indent-12">
+        </Paragraph>
+        <Paragraph>
           These insights from user research taught me some valuable lessons, one
           of which is that everyone's experiences and thought processes are
           valuable, even if they differ from the majority. This research can
@@ -68,8 +80,8 @@ export default function MyJourneyPt2() {
           it's regarding the product or the needs of different teammates. It
           helps craft good strategies and fosters relationships where everyone
           feels heard and valued.
-        </div>
-        <div class="indent-12">
+        </Paragraph>
+        <Paragraph>
           Knowing the user has made me more aware of how different types of
           technology will impact people's lives. For example, some technologies
           feel tailored to how I like to do things, while others seem like they
@@ -80,7 +92,7 @@ export default function MyJourneyPt2() {
           what everyone—rather than just people like me—would like and prefer.
           It pushes me out of my comfort zone so that I can envision what others
           focus on and what they value.
-        </div>
+        </Paragraph>
       </div>
     </>
   );
