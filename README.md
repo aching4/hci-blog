@@ -1,34 +1,16 @@
-## Usage
+# Getting Started
+1. Clone this repo
+2. cd into the project
+3. Run `npm run init`
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+# Development
+1. Run `npm start`
+2. Open [http://localhost:3000](http://localhost:3000)
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+# New Blog
+1. Add new blog to `src/blogs/<file_name>.tsx`
+2. Add new entry to `src/blogs/data.tsx`
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
-
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev` or `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+# Deployment
+1. Run `npm run pages`
+2. In a few minutes the page should be deployed to [https://aching4.github.io/hci-blog/](https://aching4.github.io/hci-blog/)
