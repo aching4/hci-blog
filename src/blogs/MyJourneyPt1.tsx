@@ -1,7 +1,7 @@
-import drawing from "../assets/images/drawing.png";
-import notion from "../assets/images/notion.png";
-import google from "../assets/images/google.png";
-import math from "../assets/images/math.png";
+import drawing from "../assets/images/MyJourneyPt1/drawing.png";
+import notion from "../assets/images/MyJourneyPt1/notion.png";
+import google from "../assets/images/MyJourneyPt1/google.png";
+import math from "../assets/images/MyJourneyPt1/math.png";
 
 export default function MyJourneyPt1() {
   return (
