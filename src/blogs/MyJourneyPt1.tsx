@@ -2,7 +2,7 @@ import drawing from "../assets/images/MyJourneyPt1/drawing.png";
 import google from "../assets/images/MyJourneyPt1/google.png";
 import math from "../assets/images/MyJourneyPt1/math.png";
 import notion from "../assets/images/MyJourneyPt1/notion.png";
-import OrderedList from "../components/elements/OrderedList";
+import List from "../components/elements/List";
 import Paragraph from "../components/elements/Paragraph";
 import Subtitle from "../components/elements/Subtitle";
 import Title from "../components/elements/Title";
@@ -51,7 +51,8 @@ export default function MyJourneyPt1() {
           interact technology on a daily basis. It creates a smoother and more
           welcoming experience that we all tend to take for granted.
         </Paragraph>
-        <OrderedList
+        <List
+          type="ordered"
           description="A few things I've discovered to have a huge impact on how a person
             feels about a platform is:"
         >
@@ -68,7 +69,7 @@ export default function MyJourneyPt1() {
             How designs like buttons, icons, colors, and the layout of the page
             cohesively looks
           </li>
-        </OrderedList>
+        </List>
         <Paragraph
           img={{
             src: notion,
@@ -121,7 +122,10 @@ export default function MyJourneyPt1() {
           who may feel like more advanced math is very difficult and feel
           unmotivated to continue learning it.
         </Paragraph>
-        <OrderedList description="Some problems that normally kills a student's motivation:">
+        <List
+          type="ordered"
+          description="Some problems that normally kills a student's motivation:"
+        >
           <li>Don't know how to approach a problem when given one</li>
           <li>
             Aren't familiar with how to solve problems in a specific area in
@@ -129,7 +133,7 @@ export default function MyJourneyPt1() {
           </li>
           <li>Have difficulty recalling formulas or how/when to apply them.</li>
           <li>Wants more practice with solutions available + feedback.</li>
-        </OrderedList>
+        </List>
         <Paragraph
           img={{
             src: math,
