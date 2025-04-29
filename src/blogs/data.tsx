@@ -3,6 +3,7 @@ import MyJourneyPt2 from "./MyJourneyPt2";
 import MyJourneyPt4 from "./MyJourneyPt4";
 import MyJourneyPt5 from "./MyJourneyPt5";
 import MyJourneyPt6 from "./MyJourneyPt6";
+import MyJourneyPt7 from "./MyJourneyPt7";
 
 export const blogs = [
   {
@@ -29,5 +30,10 @@ export const blogs = [
     title: "My Journey Pt. 6",
     path: "human-computer-interaction-my-journey-part-6",
     element: <MyJourneyPt6 />,
+  },
+  {
+    title: "My Journey Pt. 7",
+    path: "human-computer-interaction-my-journey-part-7",
+    element: <MyJourneyPt7 />,
   },
 ];
