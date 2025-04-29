@@ -8,8 +8,9 @@
 2. Open [http://localhost:3000](http://localhost:3000)
 
 # New Blog
-1. Add new blog to `src/blogs/<file_name>.tsx`
-2. Add new entry to `src/blogs/data.tsx`
+1. Add new blog assets to `src/assets/images/MyJourneyPt#`
+2. Add new blog to `src/blogs/MyJourneyPt#.tsx`
+3. Add new entry to `src/blogs/data.tsx`
 
 # Deployment
 1. Run `npm run pages`
