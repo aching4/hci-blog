@@ -1,10 +1,18 @@
 import { IconX } from "@tabler/icons-solidjs";
-import { JSX } from "solid-js";
+import { JSX, onCleanup, onMount } from "solid-js";
 
 export default function BlogContainer(props: {
   element?: JSX.Element;
   onClose?: () => void;
 }) {
+  onMount(() => {
+    props.onClose && window.addEventListener("keydown", props.onClose);
+  });
+
+  onCleanup(() => {
+    props.onClose && window.removeEventListener("keydown", props.onClose);
+  });
+
   return (
     <>
       <div
