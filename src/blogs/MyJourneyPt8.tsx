@@ -4,12 +4,12 @@ import Title from "../components/elements/Title";
 export default function MyJourneyPt8() {
   return (
     <>
-      <Title>My Journey Pt. 7</Title>
+      <Title>My Journey Pt. 8</Title>
       <div class="space-y-2 mt-4">
         <Paragraph>
           I actually did not really use AI tools when doing my HCI design process. 
           Most of the design process comes from trial and error of what looks good 
-          and what doesn\’t look good. Most of the time, we used AI (chatgpt) to 
+          and what doesn't look good. Most of the time, we used AI (chatgpt) to 
           streamline and improve my workflow by having chatgpt look through spelling 
           or grammar errors as well as at the very beginning, come up with a few 
           ideas on what we could be doing the project about. It really was just 
@@ -34,7 +34,7 @@ export default function MyJourneyPt8() {
           for AI to be super useful, but I can see how integrating AI into our 
           application would make it a lot better and helpful for students. There 
           were not much AI-generated insights that led to important design decisions 
-          that we haven’t already thought of. Most of the uses was to flush it out a 
+          that we haven't already thought of. Most of the uses was to flush it out a 
           bit more or reorganize our thoughts.
         </Paragraph>
         <Paragraph>
@@ -70,7 +70,7 @@ export default function MyJourneyPt8() {
           continuous check ins and actively checking out what the AI results shouldensure 
           that human intuition and empathy are not lost in the process. I think AI can 
           actually mess up collaboration within design team, especially if colleagues 
-          don’t agree with how to use AI in their projects. But it does also help facilitate 
+          don't agree with how to use AI in their projects. But it does also help facilitate 
           communication on what is expected from the AI versus the designers. If not managed 
           well, it may create silos and reduce meaningful human interaction.
         </Paragraph>
