@@ -5,12 +5,16 @@ export default function BlogContainer(props: {
   element?: JSX.Element;
   onClose?: () => void;
 }) {
+  const onClose = (event: KeyboardEvent) => {
+    event.key === "Escape" && props.onClose?.();
+  }
+
   onMount(() => {
-    props.onClose && window.addEventListener("keydown", props.onClose);
+    props.onClose && window.addEventListener("keydown", onClose);
   });
 
   onCleanup(() => {
-    props.onClose && window.removeEventListener("keydown", props.onClose);
+    props.onClose && window.removeEventListener("keydown", onClose);
   });
 
   return (
